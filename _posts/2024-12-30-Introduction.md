@@ -1,7 +1,3 @@
-title: "Introduction"
-date: 2024-12-30 6:30:40 -0000
-categories: bugbounty infosec
-
 ## Some shit about me.
 
 Hi I'm 0xVader, I am a
