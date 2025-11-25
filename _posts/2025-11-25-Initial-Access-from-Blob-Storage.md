@@ -35,8 +35,7 @@ https://mbtwebsite.blob.core.windows.net/$web/?restype=container&comp=list
 
 However, when we investigate the following site, we get a bunch of static content, and not the useful kind:
 
-![[Screenshot_20251125_084049.png]]
-
+![Static content listing](https://i.imgur.com/4X9dZSm.png)
 Fortunately our journey isn't over yet, as there does exist another way to list the contents of the blob through versioning. Versioning allows several versions of the same blob to exist on the container. So equipped with this knowledge, I used curl to list the contents of the directory and used versioning to list files that were not immediately accessible. 
 
 ```bash
@@ -127,8 +126,7 @@ To sign in, use a web browser to open the page https:
 
 We then enter the code and type in our compromised users credentials:
 
-![[Screenshot_20251125_091032.png]]
-
+![Static content listing](https://i.imgur.com/1moqbJF.png)
 From there, the list of users popped up and I had a foothold. 
 ```
 PS /home/vader> ./entra_users.ps1                                                                                   
