@@ -13,3 +13,5 @@ jekyll-archives:
     day: '/:year/:month/:day/'
     tag: '/tag/:name/'
     category: '/category/:name/'
+author: "Vader"
+description: "Security research, pentesting notes, and labs."
