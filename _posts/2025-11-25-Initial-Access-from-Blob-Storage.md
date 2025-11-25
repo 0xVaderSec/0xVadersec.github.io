@@ -1,3 +1,5 @@
+
+
 Hi everyone, my name is Vader, and today we’ll be jumping into another awesome lab on the PwnedLabs platform.
 
 In this session, we’re tackling **the Initial Access lab from the Blobs module**, part of the first section of the **MCRTP Bootcamp**. This lab is designed to introduce real-world cloud attack techniques, walk through configurations, and show how a single overlooked blob can become the foothold an attacker needs.
@@ -7,9 +9,7 @@ In this session, we’re tackling **the Initial Access lab from the Blobs module
 At the start of the lab we are given a site, as a foothold, being curious I checked the source code.
 
 ```html
-
-window.devices = { mobile: false, tablet: false } window.site_id = 'Mega Big Tech' window.page_id = 'pg_vBxLB77sc9y3boxQouiYYwpnA' window.pages = [{"path":"Mega Big Tech","id":"pg_vBxLB77sc9y3boxQouiYYwpnA","home":true}]; window.preview = true; </script> <link rel="stylesheet" media="screen" href="[https://mbtwebsite.blob.core.windows.net/$web/static/application-0162b80622a4b825c801f8afcd695b5918649df6f9b26eb012974f9b00a777c5.css](view-source:https://mbtwebsite.blob.core.windows.net/$web/static/application-0162b80622a4b825c801f8afcd695b5918649df6f9b26eb012974f9b00a777c5.css)"><link rel="stylesheet" href="[https://mbtwebsite.blob.core.windows.net/$web/static/css](view-source:https://mbtwebsite.blob.core.windows.net/$web/static/css)" media="all"> <script type="text/javascript" charset="UTF-8" src="[https://mbtwebsite.blob.core.windows.net/$web/static/common.js.download](view-source:https://mbtwebsite.blob.core.windows.net/$web/static/common.js.download)"></script><script type="text/javascript" charset="UTF-8" src="[https://mbtwebsite.blob.core.windows.net/$web/static/util.js.download](view-source:https://mbtwebsite.blob.core.windows.net/$web/static/util.js.download)"></script></head><body class="siter-ready">
-
+href="[https://mbtwebsite.blob.core.windows.net/$web/static/application-0162b80622a4b825c801f8afcd695b5918649df6f9b26eb012974f9b00a777c5.css](view-source:https://mbtwebsite.blob.core.windows.net/$web/static/application-0162b80622a4b825c801f8afcd695b5918649df6f9b26eb012974f9b00a777c5.css)"><link rel="stylesheet"
 ```
 
 This appears to be fetching content from an Azure Blob. 
